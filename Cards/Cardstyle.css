@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     background-color: white;
     overflow: hidden;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
 }
 .card .card-container .card-text {
     padding: 1rem;
@@ -187,3 +188,83 @@ body {
     background-color: var(--primary-color);
     color: white;
 }
+
+/* card 8 */
+.custom-design-card2 {
+    border-radius: 24px 8px;
+    position: relative;
+}
+.custom-design-card2 .card-container .card-information {
+    padding-top: 0;
+}
+.custom-design-card2 .card-badge {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+    right: 0;
+    height: 24px;
+    border: 2px solid var(--primary-color);
+}
+.custom-design-card2 .card-badge i {
+    font-size: 24px;
+}
+.custom-design-card2 .card-badge:hover, .card-badge{
+    color: var(--primary-color);
+    background-color: white;
+}
+/* card 9 */
+.horizontal-card {
+    width : auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px 8px;
+}
+.horizontal-card .card-image {
+    width: 110px;
+    height: 110px;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+}
+.horizontal-card .card-actions {
+    flex-direction: column;
+}
+/* card 10 */
+.card-w-badge {
+    width : auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px 8px;
+    position: relative;
+    font-weight: bold;
+}
+.card-w-badge .card-image {
+    width: 110px;
+    height: 110px;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+}
+.card-w-badge .card-badge {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 5px 10px;
+    right: 0;
+}
+.card-w-badge .card-actions {
+    flex-direction: column;
+}
+
+
