@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root {
+    --primary-color : #c2004b;
+    --secondary-color : #eb679a;
+    --light-color : #ffeff5;
+    --dark-color : #72022d;
+    --subtitle-text-color : #0000008A;
+    --info-text-color : #757582;
+    --background-color: #F7F7F7;
+    --btn-primary : #007bff;
+    --btn-primary_hover : #b1d7ff;
+    --btn-success : #00bc49;
+    --btn-success_hover : rgb(189, 255, 189);
+    --btn-warning : #ffc107;
+    --btn-warning_hover : #fde9ae;
+    --btn-original :rgb(239, 239, 239);
+    --btn-link : #4B1F0E;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-color);
+}
+.btn {
+    padding: 0px 16px;
+    color: var(--dark-color);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 2.25rem;
+    margin: 8px 8px 8px 0;
+    cursor: pointer;
+}
+.btn a {
+    text-decoration: none;
+    color: var(--dark-color);
+    background-color: transparent;
+}
+.btn i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+section {
+    display: flex;
+    border-bottom: 2px solid grey;
+    justify-content: space-between;
+}
+section .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5rem;
+}
+.buttons {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-evenly;
+}
+
+/* basic button */
+.basicButtons .btn {
+    background-color: transparent;
+}
+.basicButtons .basic:hover {
+    background-color: var(--btn-original);
+}
+.basicButtons .primary {
+    color: var(--btn-primary);
+}
+.basicButtons .primary:hover {
+    background-color: var(--btn-primary_hover);
+}
+.basicButtons .success {
+    color: var(--btn-success);
+}
+.basicButtons .success:hover {
+    background-color: var(--btn-success_hover);
+}
+.basicButtons .warn {
+    color: var(--btn-warning);
+}
+.basicButtons .warn:hover {
+    background-color: var(--btn-warning_hover);
+}
+.basicButtons .disabled {
+    opacity: 0.5;
+}
+.basicButtons .link:hover {
+    background-color: var(--btn-original);
+}
+
+/* Primary Buttons */
+.raisedButtons .btn {
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+}
+.raisedButtons .basic {
+    background-color: white;
+}
+.raisedButtons .primary {
+    color: white;
+    background-color: var(--btn-primary);
+}
+.raisedButtons .success {
+    color: white;
+    background-color: var(--btn-success);
+}
+.raisedButtons .warn {
+    background-color: var(--btn-warning);
+    color: white;
+}
+.raisedButtons .disabled {
+    opacity: 0.5;
+}
+.raisedButtons .link {
+    background-color: white;
+}
+
+/* Stroked Buttons */
+.strokedButtons .btn {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+.strokedButtons .basic:hover {
+    background-color: var(--btn-original);
+}
+.strokedButtons .primary {
+    color: var(--btn-primary);
+}
+.strokedButtons .primary:hover {
+    background-color: var(--btn-primary_hover);
+}
+.strokedButtons .success {
+    color: var(--btn-success);
+}
+.strokedButtons .success:hover {
+    background-color: var(--btn-success_hover);
+}
+.strokedButtons .warn {
+    color: var(--btn-warning);
+}
+.strokedButtons .warn:hover {
+    background-color: var(--btn-warning_hover);
+}
+.strokedButtons .disabled {
+    opacity: 0.5;
+}
+.strokedButtons .link:hover {
+    background-color: var(--btn-original);
+}
+
+/* Primary Buttons */
+
+.flatButtons .basic {
+    background-color: white;
+}
+.flatButtons .primary {
+    color: white;
+    background-color: var(--btn-primary);
+}
+.flatButtons .success {
+    color: white;
+    background-color: var(--btn-success);
+}
+.flatButtons .warn {
+    background-color: var(--btn-warning);
+    color: white;
+}
+.flatButtons .disabled {
+    opacity: 0.5;
+}
+.flatButtons .link {
+    background-color: white;
+}
+
+/* Icon buttons */
+.iconButtons .btn {
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 50%;
+}
+.iconButtons .basic:hover {
+    background-color: var(--btn-original);
+}
+.iconButtons .primary {
+    color: var(--btn-primary);
+}
+.iconButtons .primary:hover {
+    background-color: var(--btn-primary_hover);
+}
+.iconButtons .success {
+    color: var(--btn-success);
+}
+.iconButtons .success:hover {
+    background-color: var(--btn-success_hover);
+}
+.iconButtons .warn {
+    color: var(--btn-warning);
+}
+.iconButtons .warn:hover {
+    background-color: var(--btn-warning_hover);
+}
+.iconButtons .disabled {
+    opacity: 0.5;
+}
+.iconButtons .link:hover {
+    background-color: var(--btn-original);
+}
+
+/* Floating Action Buttons */
+.fabButtons .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+}
+.fabButtons .primary {
+    background-color: var(--btn-primary);
+    color: white;
+    border: 2px solid white;
+}
+.fabButtons .primary:hover,
+.fabButtons .primary:active {
+    background-color: white;
+    color: var(--btn-primary);
+    border-color: var(--btn-primary);
+}
+.fabButtons .success {
+    background-color: var(--btn-success);
+    color: white;
+}
+.fabButtons .warn {
+    background-color: var(--btn-warning);
+    color: white;
+}
+.fabButtons .disabled {
+    opacity: 0.5;
+}
+.fabButtons .btn a {
+    color: white;
+}
+.fabButtons .link {
+    background-color: var(--btn-link);
+    color: white;
+}
+
+/* Mini FAB */
+.miniFabButtons .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+}
+.miniFabButtons .primary {
+    background-color: var(--btn-primary);
+    color: white;
+    border: 2px solid white;
+}
+.miniFabButtons .primary:hover,
+.miniFabButtons .primary:active {
+    background-color: white;
+    color: var(--btn-primary);
+    border-color: var(--btn-primary);
+}
+.miniFabButtons .success {
+    background-color: var(--btn-success);
+    color: white;
+}
+.miniFabButtons .warn {
+    background-color: var(--btn-warning);
+    color: white;
+}
+.miniFabButtons .disabled {
+    opacity: 0.5;
+}
+.miniFabButtons .btn a {
+    color: white;
+}
+.miniFabButtons .link {
+    background-color: var(--btn-link);
+    color: white;
+}
+
+/* Custom FAB */
+.customButtons .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+}
+.customButtons .primary {
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap : 5px;
+    background-color: var(--btn-primary);
+    color: white;
+    border: 2px solid white;
+}
+.customButtons .primary:hover,
+.customButtons .primary:active {
+    background-color: white;
+    color: var(--btn-primary);
+    border-color: var(--btn-primary);
+}
+.customButtons .warn {
+    background-color: var(--btn-warning);
+    color: white;
+    border-radius: 12px;
+}
+
+.customButtons .buttons .btn.link{
+    background-color: var(--btn-link);
+    color: white;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.customButtons .buttons .btn.link a {
+    color: white;
+}
