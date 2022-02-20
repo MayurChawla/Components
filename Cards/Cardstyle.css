@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root {
+    --primary-color : #c2004b;
+    --secondary-color : #eb679a;
+    --light-color : #ffeff5;
+    --dark-color : #72022d;
+    --subtitle-text-color : #0000008A;
+    --info-text-color : #757582;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+body {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Common css for card */
+.card {
+    border-radius: 4px;
+    width: 350px;
+    margin : 35px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+.card .card-container .card-text {
+    padding: 1rem;
+}
+.card .card-container .card-text .card-heading {
+    font-size : 1.25rem;
+    line-height: 2rem;
+}
+.card .card-container .card-text .card-subheading {
+    font-size: 0.875rem;
+    color: var(--subtitle-text-color);
+    line-height: 1.375rem;
+}
+.card .card-container .card-information {
+    padding: 1rem 1rem 0.5rem;
+    color: var(--info-text-color);
+    font-size: 14px;
+    line-height: 1.25rem;
+}
+/* Common css for all card-action panel */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.card-actions button,
+.card-actions div>i {
+    color: var(--primary-color);
+    border: 0px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-actions .card-buttons button {
+    height: 36px;
+    font-weight: 600;
+    letter-spacing: .0892857143em;
+    padding: 0px 0.5rem;
+}
+.card-actions .card-buttons button:hover,
+.card-actions .card-icons div i:hover {
+    background-color: var(--light-color);
+}
+.card-actions .card-buttons .button1 {
+    margin-right: 0.5rem;
+}
+.card-actions .card-icons {
+    display: flex;
+    flex-direction: row;
+}
+.card-actions .card-icons div {
+    display: inline;
+}
+.card-actions .card-icons div i{
+    margin: 0px;
+    font-size: 24px;
+    padding: 12px;
+    display: inline;
+    color: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* card1 basic-card */
+.basic-card .card-container {
+    display: flex;
+}
+.basic-card .card-container .card-image {
+    width: 110px;
+    height: 110px;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+}
+
+/* card2  */
+.big-basic-card .card-container .card-image {
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    height: 12.25rem;
+}
+.big-basic-card .card-container .card-information {
+    padding-top: 0;
+}
+
+/* card 3 */
+.big-basic-w-header .card-container .card-image {
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    height: 12.25rem;
+}
+
+/* card 4 */
+.basic-w-textOmedia .card-container .for-position {
+    position: relative;
+}
+.basic-w-textOmedia .card-container .for-position .card-image {
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    height: 12.25rem;
+}
+.basic-w-textOmedia .card-container .for-position .card-text {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: white;
+}
+.basic-w-textOmedia .card-container .for-position .card-text .card-subheading {
+    color: white;
+}
+
+/* card 5 */
+.big-basic-w-onlybuttons .card-container .card-image {
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    height: 12.25rem;
+}
+.big-basic-w-onlybuttons .card-container .card-information {
+    padding-top: 0;
+}
+
+/* card 6 */
+.big-basic-w-onlyactions .card-container .card-image {
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    height: 12.25rem;
+}
+.big-basic-w-onlyactions .card-container .card-information {
+    padding-top: 0;
+}
+.big-basic-w-onlyactions .card-actions {
+    justify-content: end;
+}
+
+/* card 7 */
+.custom-design-card .card-container .card-image {
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    height: 12.25rem;
+}
+.custom-design-card .card-container .card-information {
+    padding-top: 0;
+}
+.custom-design-card .card-actions .card-buttons button:hover,
+.custom-design-card .card-actions .card-icons div i:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* card 8 */
+.custom-design-card2 {
+    border-radius: 24px 8px;
+    position: relative;
+}
+.custom-design-card2 .card-container .card-information {
+    padding-top: 0;
+}
+.custom-design-card2 .card-badge {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+    right: 0;
+    height: 24px;
+    border: 2px solid var(--primary-color);
+}
+.custom-design-card2 .card-badge i {
+    font-size: 24px;
+}
+.custom-design-card2 .card-badge:hover, .card-badge{
+    color: var(--primary-color);
+    background-color: white;
+}
+/* card 9 */
+.horizontal-card {
+    width : auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px 8px;
+}
+.horizontal-card .card-image {
+    width: 110px;
+    height: 110px;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+}
+.horizontal-card .card-actions {
+    flex-direction: column;
+}
+/* card 10 */
+.card-w-badge {
+    width : auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px 8px;
+    position: relative;
+    font-weight: bold;
+}
+.card-w-badge .card-image {
+    width: 110px;
+    height: 110px;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+}
+.card-w-badge .card-badge {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 5px 10px;
+    right: 0;
+}
+.card-w-badge .card-actions {
+    flex-direction: column;
+}
+
+
