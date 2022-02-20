@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root {
+    --primary-color : #c2004b;
+    --secondary-color : #eb679a;
+    --light-color : #ffeff5;
+    --dark-color : #72022d;
+
+    --badge-primary : #0d6efd;
+    --badge-success : #198754;
+    --badge-warning : #ffc107;
+    --badge-link : #fd7e14;
+    --badge-info : #0dcaf0;
+    --badge-inside-button : goldenrod;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+.image-container {
+    width: 40%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.circle-image {
+    border-radius: 50%;
+}
+.dynamic-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
