@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root {
+    --primary-color : #c2004b;
+    --secondary-color : #eb679a;
+    --light-color : #ffeff5;
+    --dark-color : #72022d;
+    --subtitle-text-color : #0000008A;
+    --info-text-color : #757582;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.avatar {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+.avatar-text {
+    width: 7.5rem;
+}
+.avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+/* image avatars */
+.image-avatars .avatar.sm {
+    height: 2.1875rem;
+    width: 2.1875rem;
+}
+
+.image-avatars .avatar {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+.image-avatars .avatar.lg {
+    height: 4.375rem;
+    width: 4.375rem;
+}
+
+/* Square Image Container */
+.image-avatars-square .avatar-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+.image-avatars-square .avatar-container-sm {
+    width: 2.1875rem;
+    height: 2.1875rem;
+}
+.image-avatars-square .avatar-container-sm .avatar.sm {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+.image-avatars-square .avatar-container-md {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+.image-avatars-square .avatar-container-md .avatar {
+    height: 4.375rem;
+    width: 4.375rem;
+}
+.image-avatars-square .avatar-container-lg {
+    width: 4.375rem;
+    height: 4.375rem;
+}
+.image-avatars-square .avatar-container-lg .avatar.lg {
+    height: 6.25rem;
+    width: 6.25rem;
+}
+
+/* Icon Avatars */
+.icon-avatars {
+    justify-content: center;
+    align-items: center;
+}
+.icon-avatars .sm i {
+    font-size: 2.1875rem;
+}
+.icon-avatars .md i {
+    font-size: 3.125rem;
+}
+.icon-avatars .lg i {
+    font-size: 4.375rem;
+}
+/* image-avatars with badge */
+.image-avatars-w-badge .avatar.sm {
+    height: 2.1875rem;
+    width: 2.1875rem;
+}
+
+.image-avatars-w-badge .avatar {
+    height: 3.125rem;
+    width: 3.125rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
+}
+.image-avatars-w-badge .badge_parent {
+    position: relative;
+}
+.image-avatars-w-badge .badge_parent .badge_border {
+    border: 1px solid var(--dark-color);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 70%;
+    padding: 0.5px;
+}
+
+.image-avatars-w-badge .badge_parent .badge_border .badge {
+    display: block;
+    background-color: var(--primary-color);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+
+.image-avatars-w-badge .avatar.lg {
+    height: 4.375rem;
+    width: 4.375rem;
+}
