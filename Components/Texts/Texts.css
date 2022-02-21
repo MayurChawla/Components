@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root {
+  --primary-color : #c2004b;
+  --secondary-color : #eb679a;
+  --light-color : #ffeff5;
+  --dark-color : #72022d;
+
+  --alert-primary : #cfe2ff;
+  --alert-primary-color : #084298;
+  --alert-success : #d1e7dd;
+  --alert-success-color : #0f5132;
+  --alert-warning : #fff3cd;
+  --alert-warning-color : saddlebrown;
+  --alert-link : #cff4fc;
+  --alert-link-color : #055160;
+  --alert-similar-to-theme : #ffd0e1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    color: black;
+    margin: 50px 0;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 60%;
+    border: 2px solid black;
+    margin-bottom: 25px;
+    padding: 1rem;
+}
+.h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.h4 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+.h5 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.h6 {
+    font-size: 0.875rem;
+    margin: 1rem 0;
+}
+.text-container .Left-txt {
+    width: -webkit-fill-available;
+    text-align: left;
+}
+.text-container .Right-txt {
+    width: -webkit-fill-available;
+    text-align: right;
+}
+.text-container .Center-txt {
+    width: -webkit-fill-available;
+    text-align: center;
+}
+.txt-lg {
+    font-size: 1.5rem;
+}
+.txt-md {
+    font-size: 1.25rem;
+}
+.txt-sm {
+    font-size: 0.75rem;
+}
