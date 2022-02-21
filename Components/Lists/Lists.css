@@ -54,3 +54,38 @@ body {
 .list-container .nested {
     list-style-position: inside;
 }
+.list-container.stacked {
+    width: 30%;
+    font-size: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+    height: 500px;
+    position: relative;
+    border: 1px solid var(--primary-color);
+}
+.list-container .notification-header {
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
+    padding: 1rem;
+}
+.list-container .stacked-list {
+    width: 100%;
+    list-style-type: none;
+    background-color: var(--light-color);
+}
+.list-container .stacked-list li{
+    border: 1px solid var(--primary-color);
+    border-bottom: 0;
+}
+.list-container .stacked-list li p {
+    font-size: medium;
+}
+.list-container .stacked-list li:last-child{
+    border-bottom: 1px solid var(--primary-color);
+}
+.list-container .notification-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
