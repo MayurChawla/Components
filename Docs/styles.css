@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+:root {
+    --primary-color : #c2004b;
+    --secondary-color : #eb679a;
+    --light-color : #ffeff5;
+    --dark-color : #72022d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 10px;
+}
+html {
+    height:100%;
+    width: 100%;
+}
+body {
+    height:100vh;
+    width: 100%;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header {
+    width: 100%;
+    position: sticky;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+header .hero .hero-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+header .hero .hero-link .logo {
+    height: 100px;
+    width: 100px;
+}
+header .navigation {
+    display: flex;
+}
+header .menu-button i {
+  vertical-align: middle;
+}
+header .close-menu-button i {
+  vertical-align: middle;
+}
+header .navigation .list {
+  display: flex;
+  list-style: none;
+}
+header .navigation .list li a button{
+    font-weight: bold;
+}
+.btn {
+    padding: 0px 16px;
+    color: var(--dark-color);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 2.25rem;
+    margin: 0 16px;
+    cursor: pointer;
+  }
+.body-of-website {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: -webkit-fill-available;
+}
+.sideBar {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    height: 100%;
+    border-right: 2px solid var(--primary-color);
+    width: 15rem;
+    overflow: scroll;
+    
+}
+.sideBar .component-item {
+    padding: 1rem 0 1rem 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.sideBar .component-item p {
+    padding-right: 1.5rem;
+}
+.sideBar .component-item:hover {
+    border-left: 4px solid var(--primary-color);
+}
+.sideBar .component-item hr {
+    width: 100%;
+    border-top: 2px solid var(--primary-color);
+    float: right;
+    margin-top: 1rem;
+}
+.iframe-div {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.library-components-list-variants {
+    height: 100%;
+    width : 100%;
+    border: 0;
+}
+
