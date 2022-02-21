@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root {
+    --primary-color : #c2004b;
+    --secondary-color : #eb679a;
+    --light-color : #ffeff5;
+    --dark-color : #72022d;
+
+    --badge-primary : #0d6efd;
+    --badge-success : #198754;
+    --badge-warning : #ffc107;
+    --badge-link : #fd7e14;
+    --badge-info : #0dcaf0;
+    --badge-inside-button : goldenrod;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #F7F7F7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 50px 0;
+}
+.input-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+.input-container .input-title {
+    padding-right: 1rem;
+}
+.input-container .text-input {
+    width: 40%;
+    padding: 10px 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.input-container .input-title {
+    padding-right: 1rem;
+}
+.input-container .validation-container {
+    display: inherit;
+    width: 45%;
+    flex-direction: column;
+}
+.input-container .validation-container .text-input {
+    width: -webkit-fill-available;
+    border-color: red;
+}
+.input-container .validation-container .text-input:focus {
+    border-color: red;
+}
+.input-container .validation-container .validation-message {
+    color: red;
+}
