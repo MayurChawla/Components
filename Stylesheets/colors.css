@@ -1,0 +1,35 @@
+:root {
+    --primary-color : #c2004b;
+    --secondary-color : #eb679a;
+    --light-color : #ffeff5;
+    --dark-color : #72022d;
+  
+    --alert-primary : #cfe2ff;
+    --alert-primary-color : #084298;
+    --alert-success : #d1e7dd;
+    --alert-success-color : #0f5132;
+    --alert-warning : #fff3cd;
+    --alert-warning-color : saddlebrown;
+    --alert-link : #cff4fc;
+    --alert-link-color : #055160;
+    --alert-similar-to-theme : #ffd0e1;
+
+    --badge-primary : #0d6efd;
+    --badge-success : #198754;
+    --badge-warning : #ffc107;
+    --badge-link : #fd7e14;
+    --badge-info : #0dcaf0;
+    --badge-inside-button : goldenrod;
+
+    --subtitle-text-color : #0000008A;
+    --info-text-color : #757582;
+    --background-color: #F7F7F7;
+    --btn-primary : #007bff;
+    --btn-primary_hover : #b1d7ff;
+    --btn-success : #00bc49;
+    --btn-success_hover : rgb(189, 255, 189);
+    --btn-warning : #ffc107;
+    --btn-warning_hover : #fde9ae;
+    --btn-original :rgb(239, 239, 239);
+    --btn-link : #4B1F0E;
+  }

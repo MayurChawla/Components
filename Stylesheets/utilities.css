@@ -1,0 +1,26 @@
+/* ------------PADDING------------ */
+.pd-0 {
+    padding: 0rem;
+}
+.pd-1 {
+    padding: 1rem;
+}
+.pd-2 {
+    padding: 2rem;
+}
+.pd-3 {
+    padding: 3rem;
+}
+/* --------------MARGIN---------------- */
+.mg-0 {
+    margin: 0rem;
+}
+.mg-1 {
+    margin: 1rem;
+}
+.mg-2 {
+    margin: 2rem;
+}
+.mg-3 {
+    margin: 3rem;
+}
