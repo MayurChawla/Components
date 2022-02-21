@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+    <link href='/Docs/styles.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="hero">
+                <a class="hero-link" href="/index.html">
+                    <img class="logo" src="/Images/lion3.svg">
+                    <h1>KING-UI</h1>
+                </a>
+            </div>
+            <nav class="navigation mobileNavBar">
+                <ul class="list">
+                    <li>
+                        <a href="/index.html">
+                            <button class="btn listItem">HOME</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="btn listItem">DOCS</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/MayurChawla/Components">
+                        <button class="btn listItem">GITHUB</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="body-of-website">
+            <ul class="sideBar">
+                <li class="component-item" onclick="callPage(this)">
+                    <p>Alert</p>
+                    <hr>
+                </li>
+                <li class="component-item" onclick="callPage(this)">
+                    <p>Avatars</p>
+                    <hr>
+                </li>
+                <li class="component-item" onclick="callPage(this)">
+                    <p>Badge</p>
+                    <hr>
+                </li>
+                <li class="component-item" onclick="callPage(this)">
+                    <p>Buttons</p>
+                    <hr>
+                </li>
+                <li class="component-item" onclick="callPage(this)">
+                    <p>Cards</p>
+                    <hr>
+                </li>
+                <li class="component-item" onclick="callPage(this)">
+                    <p>Images</p>
+                    <hr>
+                </li>
+            </ul>
+            <div class="iframe-div">
+                <iframe id="frame" class="library-components-list-variants" src="/Components/Cards/Cards.html"
+                    title="Cards"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <script src="/Docs/jsScript.js"></script>
+</body>
+
+</html>
